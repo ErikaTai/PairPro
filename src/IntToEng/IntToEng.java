@@ -2,6 +2,11 @@ package IntToEng;
 import java.util.Scanner;
 
 public class IntToEng {
+	
+	static String[] number = {
+			"zero", "one", "two", "three", "four", "five"
+	};
+	
 	// メインメソッド
     public static void main(String[] args) {
 
@@ -14,12 +19,7 @@ public class IntToEng {
 
     // 数値を英訳する変換するメソッド
     static String translateEng(int n) {
-    	if(n == 0) return "zero";
-    	if(n == 1) return "one";
-    	if(n == 2) return "two";
-    	if(n == 3) return "three";
-    	if(n == 4) return "four";
-    	if(n == 5) return "five";
+    	if(n>=0 && n<6) return number[n];
     	return "";
     }
     
