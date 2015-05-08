@@ -4,7 +4,10 @@ import java.util.Scanner;
 public class IntToEng {
 	
 	static String[] number = {
-			"zero", "one", "two", "three", "four", "five"
+			"zero", "one", "two", "three", "four", "five",
+			"six", "seven", "eight", "nine", "ten",
+			"eleven", "twelve", "thirteen", "fourteen", "fifteen",
+			"sixteen", "sevelnteen", "eighteen", "nineteen", "twenty"
 	};
 	
 	// メインメソッド
@@ -19,7 +22,7 @@ public class IntToEng {
 
     // 数値を英訳する変換するメソッド
     static String translateEng(int n) {
-    	if(n>=0 && n<6) return number[n];
+    	if(n>=0 && n<number.length) return number[n];
     	return "";
     }
     
