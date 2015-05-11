@@ -40,6 +40,13 @@ public class IntToEngTest {
 		String actual = IntToEng.translateEng(100);
 		assertThat(actual, is(expected));
 	}
+
+	@Test
+	public void int119‚ð‘ã“ü‚µ‚½‚çonehundrednineteen‚ð•Ô‚·() {
+		String expected = "one hundred nineteen";
+		String actual = IntToEng.translateEng(119);
+		assertThat(actual, is(expected));
+	}
 	
 	@Test
 	public void int120‚ð‘ã“ü‚µ‚½‚çonehundredtwenty‚ð•Ô‚·() {
