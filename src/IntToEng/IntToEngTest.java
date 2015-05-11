@@ -36,8 +36,29 @@ public class IntToEngTest {
 	
 	@Test
 	public void int100‚ð‘ã“ü‚µ‚½‚çhundred‚ð•Ô‚·() {
-		String expected = "hundred";
+		String expected = "one hundred";
 		String actual = IntToEng.translateEng(100);
+		assertThat(actual, is(expected));
+	}
+	
+	@Test
+	public void int120‚ð‘ã“ü‚µ‚½‚çonehundredtwenty‚ð•Ô‚·() {
+		String expected = "one hundred twenty";
+		String actual = IntToEng.translateEng(120);
+		assertThat(actual, is(expected));
+	}
+	
+	@Test
+	public void int151‚ð‘ã“ü‚µ‚½‚çonehundredfiftyone‚ð•Ô‚·() {
+		String expected = "one hundred fifty one";
+		String actual = IntToEng.translateEng(151);
+		assertThat(actual, is(expected));
+	}
+	
+	@Test
+	public void int1000‚ð‘ã“ü‚µ‚½‚çthousand‚ð•Ô‚·() {
+		String expected = "thousand";
+		String actual = IntToEng.translateEng(1000);
 		assertThat(actual, is(expected));
 	}
 }
